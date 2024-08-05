@@ -1,0 +1,65 @@
+<mat-sidenav-container class="container">   
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="navlist">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                Inicio
+            </a>
+
+            <a mat-list-item routerLink="painel/cliente">
+                <i class="material-icons" routerLink="painel/cliente">
+                        person
+                </i>
+                Clientes
+            </a>
+            <a mat-list-item routerLink="painel/veiculo">
+                <i class="material-icons" routerLink="painel/veiculo">
+                    sports_motorsports
+                </i>
+                Veiculos
+            </a>
+            
+            <a mat-list-item routerLink="painel/ordemServico">
+                <i class="material-icons" routerLink="painel/ordemServico">
+                    miscellaneous_services
+                </i>
+                Ordem de Serviço
+            </a>
+
+            <a mat-list-item routerLink="manutencaopreventiva">
+                <i class="material-icons" routerLink="manutencaopreventiva">
+                    settings_suggest
+                </i>
+                Manuteção Preventiva
+            </a>
+
+            <a mat-list-item routerLink="revisao">
+                <i class="material-icons" routerLink="revisao">
+                    search
+                </i>
+                Revisão Completa
+            </a>
+
+            <a mat-list-item routerLink="troca">
+                <i class="material-icons" routerLink="troca">
+                    extension
+                </i>
+                Troca de Peça
+            </a>
+            
+            <a mat-list-item routerLink="relatorios" >
+                <i class="material-icons" routerLink="relatorios">
+                    description
+                </i>
+                Relatórios
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+
+    <!--navegaçãos-->
+    <div class="centro">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container> 

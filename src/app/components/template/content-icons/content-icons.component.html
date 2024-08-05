@@ -1,0 +1,54 @@
+<!--param 1 - qtd colunas, 2 altura das linhas, 4 espaço entre os grids-->
+    <mat-grid-list cols="3" rowHeight="150px" class="grid" gutterSize="10px">
+        
+        <mat-grid-tile id="grid1" routerLink="painel/cliente">
+            <a mat-list-item>
+                <i class="material-icons" routerLink="painel/cliente">
+                        person
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile id="grid2" colspan="2" routerLink="painel/veiculo">
+            <a>
+                <i class="material-icons" routerLink="painel/veiculo">
+                    sports_motorsports
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile id="grid3" colspan="2" routerLink="manutencaopreventiva">
+            <a mat-list-item>
+                <i class="material-icons" routerLink="manutencaopreventiva"> 
+                    settings_suggest
+                </i> 
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile id="grid4" routerLink="painel/ordemServico">
+            <a mat-list-item>
+                <i class="material-icons"  routerLink="painel/ordemServico">
+                    miscellaneous_services
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="3" id="grid5"  routerLink="relatorios">
+            <a mat-list-item>
+                <i class="material-icons"  routerLink="relatorios">
+                    description
+                </i>
+            </a>
+        </mat-grid-tile>
+
+        <mat-grid-tile id="grid6" routerLink="revisao">
+            <a mat-list-item>
+                <i class="material-icons"  routerLink="revisao">
+                    search
+                </i>
+            </a>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="2" id="grid7"  routerLink="troca">
+            <a mat-list-item>
+                <i class="material-icons"  routerLink="troca">
+                    extension
+                </i>
+            </a>
+        </mat-grid-tile>
+    </mat-grid-list>

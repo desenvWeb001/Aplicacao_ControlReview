@@ -1,0 +1,29 @@
+
+mat-grid-tile i{
+    font-size: 60px;  
+    color: #FDFEFE;
+}
+
+/* color gris manu principal*/
+
+#grid1{
+    background:#5DADE2;
+}
+#grid2{
+    background: #48C9B0 ;
+}
+#grid3{
+    background:#F1C40F;
+}
+#grid4{
+    background:#E74C3C;
+}
+#grid5{
+    background:#21618C; 
+}
+#grid6{
+    background:#48C9B0;
+}
+#grid7{
+    background:#F1C40F; 
+}

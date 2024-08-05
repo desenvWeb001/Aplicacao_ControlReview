@@ -1,0 +1,41 @@
+<mat-card>
+    <mat-card-title>Manutenção Preventiva</mat-card-title>
+
+    <form>
+      <mat-form-field appearance="outline">
+        <mat-label>Ordem Serviço</mat-label>
+        <mat-select name="ordemservico" [(ngModel)] = "manuprevente.ordemservico">
+          <mat-option *ngFor="let os of ordemservico" [value]="os.id">
+          {{os.id}} - {{os.cliente}} - {{os.veiculo}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    <section class="example-section"> 
+        <p><mat-checkbox class="embreagem" [(ngModel)] = "manuprevente.embreagem">Embreagem</mat-checkbox></p>
+        <p><mat-checkbox class="freio" [(ngModel)] = "manuprevente.freio">Freio</mat-checkbox></p>
+        <p><mat-checkbox class="luzespainel" [(ngModel)] = "manuprevente.luzespainel">Luzes Painel</mat-checkbox></p>
+        <p><mat-checkbox class="niveloleo" [(ngModel)] = "manuprevente.niveloleo">Nível Oleo</mat-checkbox></p>
+        <p><mat-checkbox class="kittracao" [(ngModel)] = "manuprevente.kittracao">Kit Tração</mat-checkbox></p>
+        <p><mat-checkbox class="carburador" [(ngModel)] = "manuprevente.carburador">Carburador</mat-checkbox></p>
+        <p><mat-checkbox class="pneu" [(ngModel)] = "manuprevente.pneu">Pneu</mat-checkbox></p>
+      </section>  
+  
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Observação</mat-label>
+        <input matInput #message maxlength="256" name="observacao" [(ngModel)] = "manuprevente.observacao">
+        <mat-hint align="start"><strong>Digite sua Observação</strong> </mat-hint>
+        <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+      </mat-form-field>
+
+    </form>
+    <button mat-raised-button class="salvar" color="primary" (click)="createManutencaoPrevent()"> 
+        Salvar
+    </button> 
+
+    <!--fazendo o bindg e chamando função -->
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
+

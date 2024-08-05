@@ -1,0 +1,18 @@
+.footer{
+    /* deixa o componente fixo no final da página*/
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    /* coloca o texto no final da linha do span*/
+    justify-content: flex-end;
+    background-color: #213347;
+}
+
+/* apontando para o span do componente para não pegar outros*/
+.footer > span{
+    /* tamanho da fonte  */
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+}

@@ -1,0 +1,54 @@
+<mat-card>
+  <mat-card-title>Ordem de Serviço</mat-card-title>
+
+  <form #myForm="ngForm">
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Nome Cliente</mat-label>
+      <mat-select name="cliente" [(ngModel)] = "ordemservico.cliente">
+        <mat-option *ngFor="let client of clientes" [value]="client.id">
+        {{client.id}} - {{client.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Tipo Ordem Serviço</mat-label>
+      <mat-select name="tipoOrdemServico" [(ngModel)] = "ordemservico.tipoOrdemServico"> 
+        <mat-option *ngFor="let os of tipoOrdemServico" [value]="os">
+        {{os}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Veiculo</mat-label>
+      <mat-select name="veiculo" [(ngModel)] = "ordemservico.veiculo">
+        <mat-option *ngFor="let veiculo of veiculos" [value]="veiculo.id">
+        {{veiculo.id}} - {{veiculo.placa}} 
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Km Entrada</mat-label>
+      <input matInput type="number" required  name="km" [(ngModel)] ="ordemservico.km">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="outline">
+      <mat-label>Observação</mat-label>
+      <input matInput #message maxlength="256" [(ngModel)] ="ordemservico.observacao" name="observacao">
+      <mat-hint align="start"><strong>Digite sua Observação</strong> </mat-hint>
+      <mat-hint align="end">{{message.value.length}} / 256</mat-hint>
+    </mat-form-field>
+</form>
+
+<button mat-raised-button class="salvar" color="primary" (click)="createOrdemServico()">
+  Salvar
+</button>
+
+<!--fazendo o bindg e chamando função -->
+<button mat-raised-button (click)="cancel()">
+  Cancelar
+</button>
+</mat-card>

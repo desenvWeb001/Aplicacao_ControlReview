@@ -1,0 +1,11 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-right: 30px;
+    margin-top: 30px;
+}
+input{
+    text-transform: uppercase;
+}

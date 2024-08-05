@@ -1,0 +1,190 @@
+{
+  "cliente": [
+    {
+      "name": " Ana Clara",
+      "email": " JOSIAS@GMAIL.COM",
+      "fone": " 999999999",
+      "id": 1
+    },
+    {
+      "name": " teste",
+      "email": " teste",
+      "fone": " 3333333333",
+      "id": 2
+    }
+  ],
+  "veiculos": [
+    {
+      "placa": " OFF3548",
+      "modelo": " HR",
+      "ano": 2021,
+      "cor": " BRANCA",
+      "id": 1
+    },
+    {
+      "placa": " OFF3548",
+      "modelo": " HR",
+      "ano": 2021,
+      "cor": " BRANCA",
+      "id": 2
+    },
+    {
+      "placa": " OFF3548",
+      "modelo": " HR",
+      "ano": 2021,
+      "cor": " BRANCA",
+      "id": 3
+    },
+    {
+      "placa": " OFF3548",
+      "modelo": " HR",
+      "ano": 2021,
+      "cor": " BRANCA",
+      "id": 4
+    }
+  ],
+  "ordemservico": [
+    {
+      "cliente": 3,
+      "tipoOrdemServico": "TROCA DE OLEO",
+      "veiculo": 2,
+      "km": " 1000",
+      "observacao": "testando endpoint",
+      "id": 1
+    },
+    {
+      "cliente": 2,
+      "tipoOrdemServico": "TROCA DE OLEO",
+      "veiculo": 2,
+      "km": " ",
+      "observacao": " sss",
+      "dataSys": "2021-08-22T20:08:58.879Z",
+      "id": 2
+    },
+    {
+      "cliente": 2,
+      "tipoOrdemServico": "REVISÃO",
+      "veiculo": 2,
+      "km": null,
+      "observacao": " jj",
+      "dataSys": "2021-08-22T20:08:58.879Z",
+      "id": 3
+    },
+    {
+      "cliente": 1,
+      "tipoOrdemServico": "TROCA DE OLEO",
+      "veiculo": 1,
+      "km": " ",
+      "observacao": " jj",
+      "dataSys": "22 7 2021",
+      "id": 4
+    },
+    {
+      "cliente": 1,
+      "tipoOrdemServico": "MANUTENÇÃO PREVENTIVA",
+      "veiculo": 1,
+      "km": " ",
+      "observacao": " ",
+      "dataSys": "8 8 2021",
+      "id": 5
+    }
+  ],
+  "manutencaopreventiva": [
+    {
+      "ordemservico": 3,
+      "embreagem": false,
+      "freio": false,
+      "luzespainel": false,
+      "niveloleo": false,
+      "kittracao": false,
+      "carburador": false,
+      "pneu": false,
+      "observacao": " teste",
+      "id": 1
+    },
+    {
+      "ordemservico": 3,
+      "embreagem": false,
+      "freio": false,
+      "luzespainel": false,
+      "niveloleo": false,
+      "kittracao": false,
+      "carburador": false,
+      "pneu": false,
+      "observacao": " teste",
+      "id": 2
+    },
+    {
+      "ordemservico": 3,
+      "embreagem": false,
+      "freio": false,
+      "luzespainel": false,
+      "niveloleo": false,
+      "kittracao": false,
+      "carburador": false,
+      "pneu": false,
+      "observacao": " teste",
+      "id": 3
+    },
+    {
+      "ordemservico": 3,
+      "embreagem": false,
+      "freio": false,
+      "luzespainel": false,
+      "niveloleo": false,
+      "kittracao": false,
+      "carburador": false,
+      "pneu": false,
+      "observacao": " teste",
+      "id": 4
+    },
+    {
+      "ordemservico": null,
+      "embreagem": null,
+      "freio": null,
+      "luzespainel": null,
+      "niveloleo": null,
+      "kittracao": null,
+      "carburador": null,
+      "pneu": null,
+      "observacao": " ",
+      "id": 5
+    },
+    {
+      "ordemservico": 3,
+      "embreagem": true,
+      "freio": true,
+      "luzespainel": true,
+      "niveloleo": true,
+      "kittracao": true,
+      "carburador": true,
+      "pneu": true,
+      "observacao": " teste",
+      "id": 6
+    },
+    {
+      "ordemservico": 3,
+      "embreagem": true,
+      "freio": true,
+      "luzespainel": true,
+      "niveloleo": true,
+      "kittracao": true,
+      "carburador": true,
+      "pneu": true,
+      "observacao": " teste",
+      "id": 7
+    },
+    {
+      "ordemservico": 2,
+      "embreagem": null,
+      "freio": null,
+      "luzespainel": null,
+      "niveloleo": null,
+      "kittracao": null,
+      "carburador": null,
+      "pneu": null,
+      "observacao": " teste",
+      "id": 8
+    }
+  ]
+}

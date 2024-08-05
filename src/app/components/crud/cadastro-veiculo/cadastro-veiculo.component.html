@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>Cadastro Veiculo</mat-card-title>
+    <form #myForm="ngForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Placa</mat-label>
+            <input matInput required [(ngModel)] = "veiculo.placa" name="placa">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Modelo</mat-label>
+            <input matInput required [(ngModel)] ="veiculo.modelo" name="modelo">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Ano</mat-label>
+            <input matInput required [(ngModel)] ="veiculo.ano" name="ano">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Cor</mat-label>
+            <input matInput [(ngModel)] ="veiculo.cor" name="cor">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button class="salvar" color="primary" (click)="createVeiculo()">
+        Salvar
+    </button>
+
+    <!--fazendo o bindg e chamando função -->
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
